@@ -1,24 +1,18 @@
 import './todolist.css'
+import TodoItemEmpty from './components/TodoItemEmpty.jsx';
+import Button from './components/Button.jsx';
+import Checkbox from './components/Checkbox.jsx'
+import TodoHeader from './components/TodoHeader.jsx';
+import TodoAdder from './components/TodoAdder.jsx';
+import TodoItem from './components/TodoItem.jsx';
+import TodoList from './components/TodoList.jsx';
 
 function TodoListApp() {
     return (
-        <div className="todo">   
-            <h1 className="todo__title">No Think, Do It.</h1>
-            <form className="todo__tform">
-                <input type="text" placeholder="할 일을 입력하세요." className="todo__input"/>
-                <button type="submit" className="todo__button todo__button--add">Add</button>
-            </form>
-            <ul className="todo__list">
-                <li className="todo__item todo__item--empty">
-                    <p>할 일 없음.</p>
-                </li>
-                <li className="todo__item todo__item--conplete"> 
-                <input type="checkbox" name="" id="chk-1" className="todo__check"/>
-                <label htmlFor="chk-1"className="todo__label">think</label>
-                <button className="todo__button todo__button--edit">🐧</button>
-                <button className="todo__button todo__button--delete">❌</button>
-                </li>
-            </ul>
+        <div className="todo"> 
+        <TodoHeader/>
+            <TodoAdder/>
+           <TodoList/>
         </div>
     )
 }
