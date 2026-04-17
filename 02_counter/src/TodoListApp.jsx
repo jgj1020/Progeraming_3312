@@ -19,12 +19,13 @@ class Todo{
 function TodoListApp() {
     const [todos, setTodos] = useState([]);
     const addTodo = (text) => setTodos((todos) =>[ 
-        // 기존 todos 복사
+        // 이전 todos 복사
         ...todos,
         // new Todo만들어서 
         //뒤에 추가하자
         new Todo(text)
     ]);
+    
     return (
         <div className="todo">
         <TodoHeader/>
