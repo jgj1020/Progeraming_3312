@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "progerami3312",
+  "compatibility_date": "2026-04-03",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "02_counter"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
